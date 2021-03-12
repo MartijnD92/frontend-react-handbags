@@ -2,10 +2,14 @@ import React from 'react';
 import './App.css';
 import Button from './Button';
 import Product from './Product';
+import Tile from './Tile';
 import bag2 from './assets/bag_2.png';
 import bag1 from './assets/bag_1.png';
 import bag3 from './assets/bag_3.png';
 import bag4 from './assets/bag_4.png';
+import brand from './assets/brand.png';
+import story from './assets/our_story.png';
+
 
 function App() {
   return (
@@ -51,6 +55,17 @@ function App() {
           price="150"
         />
       </main>
+      <footer>
+        <Tile title="The Brand">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sint earum aliquam quae nesciunt ex totam eveniet autem, veritatis porro!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </Tile>
+        <Tile image={brand}/>
+        <Tile image={story}/>
+        <Tile title="Our Story">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sint earum aliquam quae nesciunt ex totam eveniet autem, veritatis porro!</p>
+        </Tile>
+      </footer>
     </>
   );
 }
